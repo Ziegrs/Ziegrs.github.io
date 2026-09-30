@@ -1,2 +1,18 @@
-# Ziegrs.github.io
-Welcome to my page
+# Yahir.DEV
+
+Personal portfolio built with HTML, CSS and vanilla JavaScript.
+
+## Features
+- Responsive desktop/mobile layout
+- English/Spanish language switch
+- Project showcase
+- GitHub links
+- No framework or build step required
+
+## Run locally
+Open `index.html` directly or use a local development server such as Live Server.
+
+## Structure
+- `index.html` — page structure and content
+- `styles.css` — visual design and responsive layout
+- `script.js` — bilingual switch and small dynamic behavior

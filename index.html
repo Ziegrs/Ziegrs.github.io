@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yahir's portfolio — Computer Systems Engineering, automation, cloud and software projects.">
+  <title>Yahir | Developer</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="navbar">
+  <a href="#home" class="logo">Yahir.DEV</a>
+  <nav aria-label="Main navigation">
+    <a href="#home" data-i18n="navHome">Home</a>
+    <a href="#projects" data-i18n="navProjects">Projects</a>
+    <a href="#about" data-i18n="navAbout">About</a>
+    <a href="#skills" data-i18n="navSkills">Skills</a>
+    <a href="#contact" data-i18n="navContact">Contact</a>
+  </nav>
+  <button class="lang-toggle" id="langToggle" type="button" aria-label="Change language">ES</button>
+</header>
+
+<main>
+  <section id="home" class="hero section">
+    <p class="eyebrow" data-i18n="welcome">Welcome to my portfolio</p>
+    <h1><span data-i18n="hello">Hi, I'm</span> <span class="gradient-text">Yahir.</span></h1>
+    <h2 data-i18n="heroTitle">I build things that matter.</h2>
+    <p class="hero-description" data-i18n="heroDescription">Computer Systems Engineering student exploring software development, cloud infrastructure and automation.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary" data-i18n="viewProjects">View my projects</a>
+      <a href="https://github.com/Ziegrs" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub ↗</a>
+    </div>
+    <div class="terminal" aria-label="Developer terminal decoration">
+      <div class="terminal-bar"><span></span><span></span><span></span><small>yahir@dev:~</small></div>
+      <div class="terminal-body"><span class="prompt">$</span> <span data-i18n="terminal">building ideas into real projects</span><span class="cursor">_</span></div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <p class="section-kicker">01 / <span data-i18n="aboutKicker">ABOUT</span></p>
+    <div class="section-grid">
+      <div><h2 class="section-title" data-i18n="aboutTitle">A little about me</h2></div>
+      <div class="about-copy">
+        <p data-i18n="aboutP1">I'm a Computer Systems Engineering student in Mexico City. I enjoy learning by building: breaking things, understanding why they failed, and turning the result into something useful.</p>
+        <p data-i18n="aboutP2">I'm currently exploring Cloud/DevOps, networks, cybersecurity, Python and automation, with a focus on practical projects that can grow beyond the classroom.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <p class="section-kicker">02 / <span data-i18n="projectsKicker">PROJECTS</span></p>
+    <h2 class="section-title" data-i18n="projectsTitle">Things I've been building</h2>
+    <div class="project-grid">
+      <article class="project-card featured">
+        <div class="project-number">01</div>
+        <p class="project-label" data-i18n="featured">FEATURED PROJECT</p>
+        <h3>Tanya</h3>
+        <p data-i18n="tanyaDescription">A local desktop assistant built in Python with voice recognition, text-to-speech, wake-word detection, conversational AI and Windows automation.</p>
+        <div class="tags"><span>Python</span><span>Whisper</span><span>AI</span><span>Automation</span></div>
+        <p class="status"><span class="status-dot"></span><span data-i18n="inDevelopment">In development</span></p>
+      </article>
+      <article class="project-card">
+        <div class="project-number">02</div>
+        <p class="project-label" data-i18n="webProject">WEB PROJECT</p>
+        <h3>Yahir.DEV</h3>
+        <p data-i18n="portfolioDescription">This portfolio itself: a responsive, bilingual site built to practice frontend fundamentals, Git and deployment.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git</span></div>
+        <a class="card-link" href="https://github.com/Ziegrs/yahir-portfolio" target="_blank" rel="noopener noreferrer" data-i18n="sourceCode">Source code ↗</a>
+      </article>
+      <article class="project-card project-next">
+        <div class="project-number">03</div>
+        <p class="project-label" data-i18n="nextProject">NEXT PROJECT</p>
+        <h3 data-i18n="comingSoon">Coming soon.</h3>
+        <p data-i18n="nextDescription">The next project will focus on Python or Java and solve a real problem instead of existing only as a classroom exercise.</p>
+        <div class="tags"><span>Python / Java</span><span>?</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <p class="section-kicker">03 / <span data-i18n="skillsKicker">TECH STACK</span></p>
+    <h2 class="section-title" data-i18n="skillsTitle">What I'm working with</h2>
+    <div class="skills-grid">
+      <div class="skill-group"><h3 data-i18n="languages">Languages</h3><p>Python · Java · HTML · CSS · JavaScript · SQL</p></div>
+      <div class="skill-group"><h3 data-i18n="infra">Infrastructure & systems</h3><p>Linux · Git · GitHub · Networking · Azure</p></div>
+      <div class="skill-group"><h3 data-i18n="learning">Currently learning</h3><p>Cloud · DevOps · Cybersecurity · Automation</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <p class="section-kicker">04 / <span data-i18n="contactKicker">CONTACT</span></p>
+    <h2 class="contact-title" data-i18n="contactTitle">Let's build something.</h2>
+    <p data-i18n="contactText">You can find my work and follow what I'm building on GitHub.</p>
+    <a href="https://github.com/Ziegrs" target="_blank" rel="noopener noreferrer" class="btn btn-primary">github.com/Ziegrs ↗</a>
+  </section>
+</main>
+
+<footer><span>© <span id="year"></span> Yahir.DEV</span><span data-i18n="footer">Built with curiosity and too much caffeine.</span></footer>
+<script src="./script.js"></script>
+</body>
+</html>
