@@ -9,9 +9,6 @@ Personal portfolio built with HTML, CSS and vanilla JavaScript.
 - GitHub links
 - No framework or build step required
 
-## Run locally
-Open `index.html` directly or use a local development server such as Live Server.
-
 ## Structure
 - `index.html` — page structure and content
 - `styles.css` — visual design and responsive layout
