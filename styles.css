@@ -40,11 +40,21 @@ body:before{
     }
         
 .logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
         font-size:1.3rem;
         font-weight:800;
         color:var(--primary);
         letter-spacing:-.04em
     }
+.logo img{
+    width: 35px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
         
 .navbar nav{
     display:flex;
